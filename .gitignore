@@ -1,0 +1,46 @@
+# ONNX Models (large ML files)
+*.onnx
+
+# Model-related JSON files (can be regenerated)
+tts.json
+unicode_indexer.json
+
+# Voices directory
+voices/
+
+# Build artifacts and dependencies
+node_modules/
+dist/
+target/
+build/
+*.apk
+
+# Tauri / Android build artifacts
+src-tauri/target/
+src-tauri/gen/
+*.aab
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Temporary files
+*.tmp
+*.temp
