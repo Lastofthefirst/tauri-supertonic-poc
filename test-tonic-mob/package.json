@@ -1,0 +1,31 @@
+{
+  "name": "test-tonic-mob",
+  "version": "0.1.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "tauri": "tauri",
+    "tauri:dev": "ORT_DYLIB_PATH=/home/quddus/ridvan/projects/research/supertonic-mobile/test-tonic-mob/src-tauri/onnxruntime-linux-x64-1.23.2/lib/libonnxruntime.so.1.23.2 tauri dev",
+    "tauri:dev:release": "ORT_DYLIB_PATH=/home/quddus/ridvan/projects/research/supertonic-mobile/test-tonic-mob/src-tauri/onnxruntime-linux-x64-1.23.2/lib/libonnxruntime.so.1.23.2 tauri dev --release",
+    "tauri:android": "JAVA_HOME=~/android-studio/jbr ANDROID_HOME=~/Android/Sdk NDK_HOME=~/Android/Sdk/ndk/29.0.13599879 tauri android build --apk true --target aarch64"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@tauri-apps/api": "^2",
+    "@tauri-apps/plugin-fs": "^2",
+    "@tauri-apps/plugin-opener": "^2",
+    "@tauri-apps/plugin-upload": "^2.4.0",
+    "solid-js": "^1.9.3",
+    "tauri-plugin-music-notification-api": "file:../tauri-plugin-music-notification-fork"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.3",
+    "vite-plugin-solid": "^2.11.0"
+  }
+}

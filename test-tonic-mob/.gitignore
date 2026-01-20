@@ -1,0 +1,35 @@
+node_modules
+dist
+pnpm-lock.yaml
+
+# Build artifacts
+*.apk
+APK
+
+# Archives
+*.tgz
+*.tar.gz
+*.zip
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Rust
+src-tauri/target/
+
+# ONNX models and runtime (large files)
+src-tauri/assets/onnx/*.onnx
+src-tauri/onnxruntime-*/
+
+# Android build outputs
+src-tauri/gen/android/.gradle/
+src-tauri/gen/android/app/build/
+src-tauri/gen/android/app/src/main/jniLibs/
+
+# Logs
+*.log
